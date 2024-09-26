@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PemilihanHariDenganIf<NoAbsen> {
+public class PemilihanHariDenganIf02 {
 
     public static void main(String[] args) {
         // Deklarasi Scanner untuk menerima input dari pengguna
