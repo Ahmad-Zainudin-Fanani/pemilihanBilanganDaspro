@@ -58,7 +58,7 @@ public class Kafe02 {
                 totalHarga += 0.4 * totalHarga; // 40% tambahan
                 break;
             default:
-                System.out.println("Ukuran cup tidak valid");
+                System.out.println("Ukuran cup yang dipilih tidak tersedia");
                 sc.close();
                 return; // Keluar dari program jika ukuran cup tidak valid
         }
@@ -67,8 +67,8 @@ public class Kafe02 {
         double nominalBayar = totalHarga - (diskon * totalHarga);
 
         // Menampilkan hasil
-        System.out.printf("Item pembelian: " + jumlah + " " + "dengan ukuran cup " + ukuranCup);
-        System.out.printf("Nominal bayar: " + nominalBayar);
+        System.out.printf("Item pembelian: %d %s dengan ukuran cup %c\n", jumlah, menu, ukuranCup);
+        System.out.printf("Nominal bayar: %.2f\n", nominalBayar); // Format dengan dua desimal
 
         // Tutup scanner
         sc.close();
